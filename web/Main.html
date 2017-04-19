@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Arta Engineering</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="fonts/ProductSans-Regular.ttf" rel="stylesheet"/>
+        <link href="css/bootstrap.css" rel="stylesheet"/>
+        <link href="css/bootstrap-theme.css" rel="stylesheet"/>
+        <link href="css/bootstrap-theme.min.css" rel="stylesheet"/>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            .trlbl
+            {
+                background-color:#c0c0c0;
+            }
+            .trhead
+            {
+                background-color:#f1f1f1;    
+            }
+
+            body{
+                background-color:#f5f5f5;
+                font-family:Product Sans;
+            }
+           
+            table,td{font-size:16px; padding: 10px; font-family:Product Sans;}
+                      
+            body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 2px 2px 2px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+        </style>
+    </head>
+    <body>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <h1> Menu</h1>
+  <a href="CreateNew.html">Add</a>
+  <a href="Main.html">Edit</a>
+  <a href="Main.html">Delete</a>
+  <a href="Price_Hist.html">Price History</a>
+  <br><br><br><br><br><br><br>
+  <a href="Main.html">Backup & Restore</a>
+  
+</div>
+
+<div id="main">
+    
+    <table align="right">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        
+            <tr><td><select name="Itemcode">
+                        <option>-</option>
+                        <option>#0001</option>
+                        <option>#0002</option>
+                        <option>#0003</option>
+                        <option>#0004</option>
+                        <option>#0005</option>
+                        <option>#0006</option>
+                        <option>#0007</option>
+                        <option>#0008</option>
+                        <option>#0009</option>
+                        <option>#0010</option>
+                    </select>&nbsp;&nbsp;&nbsp;&nbsp;Item Code</td>
+            <td><select name="Itemname">
+                        <option>-</option>
+                        <option>Metal Bar</option>
+                        <option>Plywood</option>
+                        <option>Nails</option>
+                        <option>Hammer</option>
+                        <option>Metal Frame</option>
+                        <option>PVC Pipe</option>
+                        <option>GI Pipe</option>
+                        <option>Steel Plate</option>
+                        <option>Saw</option>
+                        <option>Wrench</option>
+                        
+                    </select>&nbsp;&nbsp;&nbsp;&nbsp;Item Name</td>
+            <td><select name="prc">
+                        <option>-</option>
+                        <option>$50</option>
+                        <option>$18</option>
+                        <option>$2</option>
+                        <option>$9</option>
+                        <option>$40</option>
+                        <option>$25</option>
+                        <option>$30</option>
+                        <option>$70</option>
+                        <option>$3</option>
+                        <option>$10</option>
+                    </select>&nbsp;&nbsp;&nbsp;&nbsp;Price;</td>
+            <td><select name="Qty">
+                        <option>-</option>
+                        <option>380pcs</option>
+                        <option>400pcs</option>
+                        <option>1000pcs</option>
+                        <option>780pcs</option>
+                        <option>200pcs</option>
+                        <option>300pcs</option>
+                        <option>350pcs</option>
+                        <option>120pcs</option>
+                        <option>50pcs</option>
+                        <option>80pcs</option>
+                    </select>&nbsp;&nbsp;&nbsp;&nbsp;Quantity</td></tr>
+                
+            </table>
+    <center>
+        <hr>
+            <div class='container-fluid'>
+            <center>
+                
+            <table class="table table-bordered table-hover">
+             
+             <tr class="trlbl">
+                 <td><input type="checkbox" name="chk" value="ON" /></td><td>Item code</td><td> Item Name </td> <td>Price</td> <td>Quantity</td><td>Description</td>
+             </tr>
+            
+             <tr class="trhead">
+             <td><input type="checkbox" name="chk" value="ON" /></td><td>#0001</td><td> Metal Bars </td> <td>$50</td> <td>380pcs</td><td>Silver,Long</td>
+             </tr>
+ 
+             <tr class="trhead">
+             <td><input type="checkbox" name="chk" value="ON" /></td><td>#0002</td><td> Plywood </td> <td>$18</td> <td>400pcs</td><td>Brown, Flat</td>
+             </tr>
+ 
+             <tr class="trhead">
+             <td><input type="checkbox" name="chk" value="ON" /></td><td>#0003</td><td> Nails </td> <td>$2</td> <td>1000pcs</td><td>Silver, Small</td>
+            </tr>
+ 
+            <tr class="trhead">
+            <td><input type="checkbox" name="chk" value="ON" /></td><td>#0004</td><td> Hammer </td> <td>$9</td> <td>780pcs</td><td>Varies, Handy size</td>
+            </tr>
+ 
+            <tr class="trhead">
+            <td><input type="checkbox" name="chk" value="ON" /></td><td>#0005</td><td> Metal Frame </td> <td>$40</td> <td>200pcs</td><td>Silver, Rugged</td>
+            </tr>
+ 
+             <tr class="trhead">
+            <td><input type="checkbox" name="chk" value="ON" /></td><td>#0006</td><td> PVC Pipe </td> <td>$25</td> <td>300pcs</td><td>Blue, Long</td>
+            </tr>
+ 
+            <tr class="trhead">
+                <td><input type="checkbox" name="chk" value="ON" /></td><td>#0007</td><td> GI Pipe </td> <td>$30</td> <td>350pcs</td><td>Black, Long</td>
+            </tr>
+            
+             <tr class="trhead">
+                 <td><input type="checkbox" name="chk" value="ON" /></td><td>#0008</td><td> Steel Plate </td> <td>$70</td> <td>120pcs</td><td>Silver, Flat</td>
+            </tr>
+            
+             <tr class="trhead">
+                 <td><input type="checkbox" name="chk" value="ON" /></td><td>#0009</td><td> Saw </td> <td>$3</td> <td>50pcs</td><td>Black Handle, Handy-size</td>
+            </tr>
+            
+             <tr class="trhead">
+                 <td><input type="checkbox" name="chk" value="ON" /></td><td>#0010</td><td> Wrench </td> <td>$10</td> <td>80pcs</td><td>Red, Handy-size</td>
+            </tr>
+         
+            <br>
+            </table>
+            </center>
+                 
+         </div>
+   
+    </center>
+    
+</div>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+</body>
+</html>
+<!--<td><select name="Desc">
+                        <option>-</option>
+                        <option>Silver, Long</option>
+                        <option>Brown, Flat</option>
+                        <option>Silver, Small</option>
+                        <option>Varies, Handy-size</option>
+                        <option>Silver, Rugged</option>
+                        <option> Blue, Long</option>
+                        <option>Black, Long</option>
+                        <option>Silver, Long</option>
+                        <option>Black Handle, Handy-size</option>
+                        <option>Red, Handy-Size</option>
+                    </select>Description</td></tr>-->
